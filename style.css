@@ -1,0 +1,237 @@
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #000;
+}
+
+/* HEADER */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  color: #fff;
+  padding: 20px 60px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  color: #5b5bff;
+}
+
+.right-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart {
+  text-decoration: none;
+  color: #fff;
+  background: #5b5bff;
+  padding: 5px 14px;
+  border-radius: 25px;
+}
+
+.gender-tabs {
+  position: absolute;
+  right: 60px;
+  bottom: -20px;
+}
+
+.gender-tabs a {
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 15px;
+}
+
+.gender-tabs a.active {
+  background: #5b5bff;
+  border-radius: 6px;
+}
+
+/* HERO SECTION */
+.hero {
+  background: #1c1c29;
+  padding: 80px 60px;
+  color: #fff;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.hero-image img {
+  width: 250px;
+  
+}
+
+.hero-text {
+  max-width: 420px;
+}
+
+.hero-text h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 15px;
+  color: #bcbcbc;
+  margin-bottom: 25px;
+}
+
+.btn {
+  border: 2px solid #5b5bff;
+  background: transparent;
+  color: #5b5bff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #5b5bff;
+  color: #fff;
+}
+
+/* OTHER SHOES SECTION */
+.other-shoes {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.other-shoes h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.other-shoes p {
+  color: #777;
+  margin-bottom: 35px;
+}
+
+.shoes-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.shoe-card {
+  text-align: center;
+}
+
+.shoe-card img {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.shoe-card h3 {
+  font-size: 18px;
+}
+
+.stock {
+  color: #666;
+  font-size: 14px;
+}
+
+.price {
+  color: #5b5bff;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.preferences {
+  margin-top: 30px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 13px;
+}
+
+footer .socials {
+  margin: 10px 0;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (min-width:769) and (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .gender-tabs {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width:360) and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .shoes-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .hero-image img {
+    width: 280px;
+  }
+}
+
